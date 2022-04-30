@@ -1,5 +1,5 @@
 # waifu_im.py
-Web-API for [waifu.im](https://waifu.im) website for getting anime pictures
+Web-API for [waifu.im](https://waifu.im) website for getting waifu pictures from an archive of over 4000 images and multiple tags
 
 ## Example
 ```python3
