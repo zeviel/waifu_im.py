@@ -4,7 +4,6 @@ Web-API for [waifu.im](https://waifu.im) website for getting waifu pictures from
 ## Example
 ```python3
 import waifu_im
-waifu_client = waifu_im.WaifuClient(token="")
-image = waifu_client.get_random_image()
-print(f"-- Image url::: {image['images'][0]['url']}")
+waifu_im = waifu_im.WaifuIm()
+waifu_im.login_with_token(token="")
 ```
