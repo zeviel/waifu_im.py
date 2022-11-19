@@ -12,7 +12,7 @@ class WaifuIm:
 		}
 		self.token = None
 
-	def login_with_token(self, token: str) -> dict:
+	def login_with_token(self, token: str) -> str:
 		self.token = token
 		self.headers["Authorization"] = f"Bearer {self.token}"
 		return self.token
@@ -47,7 +47,7 @@ class WaifuIm:
 			self,
 			image: str,
 			description: str,
-			user_id: int = None) -> dict:
+			user_id: int = None) -> int:
 		url = f"{self.first_api}/report?image={image}&description={description}"
 		if user_id:
 			url += f"&user_id={user_id}"
