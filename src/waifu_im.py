@@ -2,7 +2,7 @@ import requests
 
 	
 class WaifuIm:
-	def __init__(self) -> dict:
+	def __init__(self) -> None:
 		self.first_api = "https://api.waifu.im"
 		self.second_api = "https://waifu.im"
 		self.headers = {
